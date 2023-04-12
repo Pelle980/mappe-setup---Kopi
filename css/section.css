@@ -1,0 +1,94 @@
+.hoejre {
+  width: 16%;
+  margin-left: auto;
+  margin-top: 50px;
+  padding-right: 290px;
+}
+
+.profil {
+  display: flex;
+}
+
+.Profil-billed {
+  width: 56px;
+  height: 56px;
+  padding-right: 15px;
+}
+
+.profil-text a {
+  text-decoration: none;
+  color: black;
+}
+
+.profil-text h2 {
+  text-transform: lowercase;
+  font-size: 14px;
+}
+
+.profil-text p {
+  font-size: 14px;
+}
+
+.profil-skift {
+  font-size: 12px;
+  margin-top: 42px;
+  margin-left: auto;
+  text-decoration: none;
+  color: #0095f6;
+}
+
+.forslag {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.forslag a {
+  text-decoration: none;
+  color: black;
+  margin-top: 17px;
+  font-size: 12px;
+}
+
+.mini-profil {
+  display: flex;
+}
+
+.mini-Profil-billed {
+  width: 33px;
+  height: 33px;
+  padding-right: 15px;
+  margin-top: 10px;
+}
+
+.mini-profil-text h2 {
+  text-transform: lowercase;
+  font-size: 14px;
+}
+
+.mini-profil-text p {
+  font-size: 12px;
+}
+
+.mini-profil-skift {
+  font-size: 12px;
+  margin-top: 35px;
+  margin-left: auto;
+  text-decoration: none;
+  color: #0095f6;
+}
+
+.bund-info a {
+  color: #c7c7c7;
+  text-decoration: none;
+}
+
+.bund-info a:hover {
+  border-bottom: solid 1px #c7c7c7;
+}
+
+.bund-info p {
+  color: #c7c7c7;
+  font-size: 12px;
+}
