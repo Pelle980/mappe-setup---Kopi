@@ -1,0 +1,158 @@
+.profil-side {
+  width: 80%;
+}
+
+.header-div {
+  margin-bottom: 350px;
+}
+
+.profil-header {
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin: 0 296.5px;
+}
+
+.profil-header::after {
+  position: absolute;
+  content: "";
+  border-bottom: 1px solid gray;
+  width: 100%;
+  bottom: -70px;
+}
+
+.profil-pic {
+  width: 291.67px;
+  height: 150px;
+}
+
+.profil-pfp {
+  width: 150px;
+}
+
+.profil-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-inline-start: 0;
+}
+
+.profil-wrapper h1 {
+  font-size: 20px;
+  color: black;
+  margin-right: 30px;
+}
+
+.edit-button {
+  width: 118px;
+  height: 32px;
+  border-radius: 10px;
+  border: transparent;
+  margin-right: 10px;
+}
+
+.edit-button a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.settings-icon {
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+
+.settings-icon i {
+  font-size: 25px;
+}
+
+.profil-info ul {
+  gap: 40px;
+}
+
+.profil-info li {
+  list-style-type: none;
+}
+
+.profil-info li h2 {
+  font-size: 16px;
+}
+
+.profil-mininavn {
+  font-size: 14px;
+  color: black;
+}
+
+.test {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 90px;
+}
+
+.test a {
+  text-decoration: none;
+  color: black;
+}
+
+.test i {
+  font-size: 12px;
+}
+
+.camera {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.camera-button {
+  background-color: transparent;
+  border: transparent;
+  margin: auto;
+  margin-top: 80px;
+}
+
+.camera-button img {
+  width: 62px;
+  display: inline-block;
+}
+
+.under-camera {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: black;
+}
+
+.under-camera h2 {
+  font-size: 30px;
+  margin: 0;
+}
+
+.under-camera p {
+  font-size: 14px;
+}
+
+.under-camera a {
+  text-decoration: none;
+  color: #0095f6;
+  font-size: 14px;
+}
+
+.profil-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links1 {
+  display: flex;
+
+  gap: 20px;
+  justify-content: center;
+}
+
+.footer-links1 a {
+  color: black;
+  text-decoration: none;
+  font-size: 12px;
+}
