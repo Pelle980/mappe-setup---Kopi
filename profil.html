@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/app.js" defer></script>
     <script
       src="https://kit.fontawesome.com/4a87ab8410.js"
       crossorigin="anonymous"
@@ -13,6 +14,20 @@
     <title>Profil</title>
   </head>
   <body class="profil-side">
+    <div class="popup-settings hide">
+      <div class="box">
+        <button>Skift adgangskode</button>
+        <button>Qr-koed</button>
+        <button>Apps og websites</button>
+        <button>Notifikationer</button>
+        <button>Privatindstillinger</button>
+        <button>Supervision</button>
+        <button>Loginaktivitet</button>
+        <button>E-mails fra instagram</button>
+        <button>Log af</button>
+        <button>Annuller</button>
+      </div>
+    </div>
     <main>
       <div class="header-div">
         <header class="profil-header">
@@ -44,25 +59,76 @@
           </section>
         </header>
         <div class="test">
-          <a href="">
-            <span><i class="fa-solid fa-table-cells"></i></span> Opslag</a
+          <a
+            onclick="toggleStuff('opslag')"
+            class="opslag selected"
+            aria-selected="true"
+            href="#"
           >
-          <a href="">
-            <span><i class="fa-regular fa-bookmark"></i></span> Gemt</a
+            <span><i class="fa-solid fa-table-cells"></i></span> Opslag
+          </a>
+          <a
+            onclick="toggleStuff('gemt')"
+            id="gemt"
+            aria-selected="false"
+            href="#"
           >
-          <a href="">
-            <span><i class="fa-regular fa-user"></i></span> Tagget</a
+            <span><i class="fa-regular fa-bookmark"></i></span> Gemt
+          </a>
+          <a
+            onclick="toggleStuff('tagget')"
+            id="tagget"
+            aria-selected="false"
+            href="#"
           >
+            <span><i class="fa-regular fa-user"></i></span> Tagget
+          </a>
         </div>
-        <div class="camera">
-          <button class="camera-button">
-            <img src="/assets/camera.png" alt="" />
-          </button>
+
+        <div class="opslag-stuff">
+          <div class="camera">
+            <button class="camera-button">
+              <img src="/assets/opslag.png" alt="" />
+            </button>
+          </div>
+          <div class="under-camera">
+            <h2>Del billeder</h2>
+            <p>Når du deler billeder, vises de i din profil.</p>
+            <a href="">Del dit første Billede</a>
+          </div>
         </div>
-        <div class="under-camera">
-          <h2>Del billeder</h2>
-          <p>Når du deler billeder, vises de i din profil.</p>
-          <a href="">Del dit første Billede</a>
+
+        <div class="gem-stuff hide">
+          <div class="gem-wrapper">
+            <h4>det kun dig der kan se det du har gemt</h4>
+            <a href="#">+ Ny samling</a>
+          </div>
+
+          <div class="gem">
+            <button class="gem-button">
+              <img src="/assets/Gemt.png" alt="" />
+            </button>
+          </div>
+          <div class="under-gem">
+            <h2>Gem</h2>
+            <p>
+              Gem billeder og videoer du gerne vil se igen der er ingen som
+              bliver underrettet og det er kun dig selv som kan se hvad du har
+              gemt
+            </p>
+          </div>
+        </div>
+
+        <div class="tagget-stuff hide">
+          <div class="tagget">
+            <button class="tagget-button">
+              <img src="/assets/tagget.png" alt="" />
+            </button>
+          </div>
+          <div class="under-tagget">
+            <h2>Billeder af dig</h2>
+            <p>når folk tagger dit på billeder vises de her</p>
+          </div>
         </div>
       </div>
     </main>
