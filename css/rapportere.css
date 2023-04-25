@@ -5,15 +5,17 @@
   
   body {
     background-color: #eee;
+    
   }
   
   #wrapper {
-    width: 550px;
-    height:550px;
+    width: 750px;
+    height:650px;
     overflow: hidden;
     border: 0px solid #000;
     margin: 50px auto;
     padding: 10px;
+    
   
   }
   
@@ -25,11 +27,13 @@
     border: 2px solid #e6e6e6;
     padding: 40px 50px;
     border-radius: 10px;
+    
   }
   
   .header {
     border: 0px solid #000;
     margin-bottom: 5px;
+    
   }
 
 
@@ -52,20 +56,46 @@
     font-weight: bold;
     border-radius: 8px;
     text-decoration: none;
+    
+    
+    
+   
   }
 
 
   .tilføj{
   
-    background-color:#e0dede;
+    background-color:#b4b2b2;
     color: rgb(19, 18, 18);
-
+    margin-left: 200px;
     
-    
-  
   }
-  hr {border-left: 5px solid rgb(2, 99, 135);
-  border-right: 1px solid rgb(2, 99, 135) ;
-   width: 100%;
+  
+  
+  span{
+    font-size: 13px;
+    display: flex;
+    margin-top: 30px;
+    color: #a0a0a0;
+   
+  }
 
-     }
+
+
+   
+
+     textarea{
+     display: flex;
+     text-align: right;
+     margin-bottom: 30px;
+     
+    }
+
+.overskrift{
+  width: 340px;
+  
+}
+
+hr{
+ 
+}
