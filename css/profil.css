@@ -1,12 +1,25 @@
 :root {
 }
 
-.profil-side {
+body {
+  margin: 0;
+}
+
+nav {
+  width: 30%;
+}
+
+.wrap {
+  display: flex;
+}
+
+.user-profil {
   width: 70%;
+  margin: 0;
 }
 
 .header-div {
-  margin-bottom: 350px;
+  margin-bottom: 300px;
 }
 
 .profil-header {
@@ -82,6 +95,13 @@
   font-size: 16px;
 }
 
+.følgere-button {
+  font-family: "Times New Roman", Times, serif;
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+
 .profil-mininavn {
   font-size: 14px;
   color: black;
@@ -92,6 +112,7 @@
   justify-content: center;
   gap: 80px;
   margin-top: 90px;
+  margin-bottom: 20px;
 }
 
 .test a {
@@ -114,6 +135,7 @@
   border: transparent;
   margin: auto;
   margin-top: 80px;
+  cursor: pointer;
 }
 
 .camera-button img {
@@ -137,10 +159,13 @@
   font-size: 14px;
 }
 
-.under-camera a {
+.under-camera button {
   text-decoration: none;
   color: #0095f6;
   font-size: 14px;
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
 }
 
 .gem {
@@ -290,6 +315,242 @@
 
 .box button:last-child {
   border-bottom: transparent;
+}
+
+.popup-opslag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.466);
+  position: fixed;
+  z-index: 30;
+  width: 100%;
+  height: 100vh;
+}
+
+.box2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 790px;
+  width: 750px;
+  border-radius: 13px;
+  background-color: white;
+}
+
+.box2 h2 {
+  position: relative;
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 320px;
+}
+
+.box2 h2::after {
+  position: absolute;
+  display: flex;
+  content: "";
+  border-bottom: 1px solid lightgrey;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  bottom: -110%;
+}
+
+.box2 h3 {
+  font-size: 20px;
+}
+
+.box2 button {
+  background-color: #0095f6;
+  border: transparent;
+  color: #fff;
+  width: 150px;
+  height: 32px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.button-icon {
+  background-color: transparent;
+  border: transparent;
+}
+
+.fa-times {
+  font-size: 20px;
+  color: #fff;
+  z-index: 420;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.popup-følgere {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.466);
+  position: fixed;
+  z-index: 30;
+  width: 100%;
+  height: 100vh;
+}
+
+.box3 {
+  display: flex;
+  flex-direction: column;
+  height: 440px;
+  width: 400px;
+  border-radius: 13px;
+  background-color: white;
+}
+
+.pop-top {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.pop-top::after {
+  position: absolute;
+  display: flex;
+  content: "";
+  border-bottom: 1px solid lightgrey;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  bottom: 10px;
+}
+
+.fa-x {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.box3 h3 {
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+}
+
+.følgere-profil {
+  display: flex;
+}
+
+.følgere-Profil-billed {
+  width: 45px;
+  height: 45px;
+  padding-right: 15px;
+  margin-top: 6px;
+  margin-left: 10px;
+}
+
+.følgere-profil-text h2 {
+  text-transform: lowercase;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.følgere-profil-text p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.følgere-profil-følg {
+  font-size: 12px;
+  margin-top: 12px;
+  margin-left: 15px;
+  text-decoration: none;
+  color: #0095f6;
+  margin-right: 150px;
+}
+
+.følgere-fjern {
+  width: 63px;
+  height: 32px;
+  border: transparent;
+  border-radius: 8px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.popup-samling {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.466);
+  position: fixed;
+  z-index: 30;
+  width: 100%;
+  height: 100vh;
+}
+
+.box4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 171px;
+  width: 400px;
+  border-radius: 13px;
+  background-color: white;
+}
+
+.box4 h3 {
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+}
+
+.pop-top2 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.pop-top2::after {
+  position: absolute;
+  display: flex;
+  content: "";
+  border-bottom: 1px solid lightgrey;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  bottom: 10px;
+}
+
+#input-samling {
+  width: 360px;
+  height: 40px;
+  margin-top: auto;
+  border: solid 1px rgb(219, 219, 219);
+  color: rgb(0, 0, 0);
+  background-color: rgb(245, 245, 245);
+  border-radius: 6px;
+}
+
+.next-button {
+  font-size: 14px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 50px;
+  background-color: transparent;
+  border: transparent;
+  cursor: pointer;
+}
+
+.next-button::after {
+  position: absolute;
+  display: flex;
+  content: "";
+  border-bottom: 1px solid lightgrey;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  bottom: 30px;
 }
 
 .hide {

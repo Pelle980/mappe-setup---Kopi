@@ -42,3 +42,43 @@ settingsIcon.addEventListener("click", function () {
 cancelBtn.addEventListener("click", function () {
   popup.classList.add("hide");
 });
+
+const opslagButton = document.querySelector(".delknap");
+const cameraButton = document.querySelector(".camera-button");
+const popupOpslag = document.querySelector(".popup-opslag");
+const closepopupopslag = document.querySelector(".fa-times");
+
+opslagButton.addEventListener("click", () => {
+  popupOpslag.classList.remove("hide");
+});
+
+cameraButton.addEventListener("click", () => {
+  popupOpslag.classList.remove("hide");
+});
+closepopupopslag.addEventListener("click", () => {
+  popupOpslag.classList.add("hide");
+});
+
+const følgereButton = document.querySelector(".følgere-button");
+const popupfølgere = document.querySelector(".popup-følgere");
+const closefølgere = document.querySelector(".fa-x");
+
+følgereButton.addEventListener("click", () => {
+  popupfølgere.classList.remove("hide");
+});
+
+closefølgere.addEventListener("click", () => {
+  popupfølgere.classList.add("hide");
+});
+
+const nysamling = document.querySelector(".ny-samling");
+const popupsamling = document.querySelector(".popup-samling");
+const closesamling = document.querySelector(".fa-regular");
+
+nysamling.addEventListener("click", () => {
+  popupsamling.classList.remove("hide");
+});
+
+closesamling.addEventListener("click", () => {
+  popupsamling.classList.add("hide");
+});

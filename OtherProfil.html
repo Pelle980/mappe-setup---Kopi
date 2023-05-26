@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/otherprofil.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/4a87ab8410.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/4a87ab8410.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="/assets/profil.png" />
+    <title>otherProfil</title>
+  </head>
+  <body>
+    <div class="popup-følgere hide">
+      <div class="box3">
+        <div class="pop-top">
+          <h3>Følgere</h3>
+          <i class="fa-solid fa-x"></i>
+        </div>
+
+        <article class="følgere-profil hide">
+          <img class="følgere-Profil-billed" src="/assets/profil.png" alt="" />
+          <div class="følgere-profil-text">
+            <h2>Profil Navn</h2>
+            <p>Profil navn</p>
+          </div>
+          <a class="følgere-profil-følg" href="#">Følg</a>
+          <button class="følgere-fjern">Fjern</button>
+        </article>
+      </div>
+    </div>
+    <div class="wrap">
+      <nav class="navbar">
+        <div class="navbar-stuff">
+          <a class="logo-a" href="/index.html"
+            ><img id="logo" src="/assets/logo.png" alt=""
+          /></a>
+          <div class="startside">
+            <button>
+              <i class="fa-solid fa-house"></i>
+              <h2>startside</h2>
+            </button>
+          </div>
+          <div class="søg">
+            <button onclick="søgpop()">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <h2>søg</h2>
+            </button>
+          </div>
+          <div class="udforsk">
+            <button>
+              <i class="fa-regular fa-compass"></i>
+              <h2>udforsk</h2>
+            </button>
+          </div>
+          <div class="reels">
+            <button>
+              <i class="fa-solid fa-clapperboard"></i>
+              <h2>reels</h2>
+            </button>
+          </div>
+          <div class="beskeder">
+            <button>
+              <i class="fa-regular fa-paper-plane fa-rotate-80"></i>
+              <h2>beskeder</h2>
+            </button>
+          </div>
+          <div class="notifikationer">
+            <button>
+              <i class="fa-regular fa-heart"></i>
+              <h2>notifikationer</h2>
+            </button>
+          </div>
+          <div class="opret">
+            <button>
+              <i class="fa-regular fa-square-plus"></i>
+              <h2>opret</h2>
+            </button>
+          </div>
+          <div class="profil">
+            <button>
+              <img src="/assets/profil.png" alt="" />
+              <h2>profil</h2>
+            </button>
+          </div>
+          <div class="mere">
+            <button>
+              <i class="fa-solid fa-bars"></i>
+              <h2>mere</h2>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <section class="other-profil">
+        <main>
+          <div class="other-div">
+            <header class="other-header">
+              <div class="other-pic">
+                <img class="other-pfp" src="/assets/profil.png" alt="" />
+              </div>
+              <section>
+                <div class="other-wrapper">
+                  <h1>bruger navn</h1>
+                  <div class="follow">
+                    <button class="Følg-button" onclick="toggleFollow()">
+                      Følg
+                    </button>
+                  </div>
+                  <div class="add">
+                    <button class="add-icon">
+                      <i class="fa-solid fa-user-plus fa-flip-horizontal"></i>
+                    </button>
+                  </div>
+                  <div class="more">
+                    <button class="more-options">
+                      <i class="fa-solid fa-ellipsis"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="other-info">
+                  <ul class="other-wrapper">
+                    <li><h2>0 opslag</h2></li>
+                    <li>
+                      <button class="følgere-button" id="follower-btn">
+                        <h2>0 følgere</h2>
+                      </button>
+                    </li>
+                    <li><h2>0 fulgte</h2></li>
+                  </ul>
+                </div>
+                <div class="other-mininavn"><span>Bruger Navn</span></div>
+              </section>
+            </header>
+            <div class="switch-between">
+              <a
+                onclick="toggleStuff('opslag')"
+                class="opslag selected"
+                aria-selected="true"
+                href="#"
+              >
+                <span><i class="fa-solid fa-table-cells"></i></span> Opslag
+              </a>
+
+              <a
+                onclick="toggleStuff('tagget')"
+                id="tagget"
+                aria-selected="false"
+                href="#"
+              >
+                <span><i class="fa-regular fa-user"></i></span> Tagget
+              </a>
+            </div>
+
+            <div class="opslag-stuff">
+              <div class="camera">
+                <img class="camera-button" src="/assets/opslag.png" alt="" />
+              </div>
+              <div class="under-camera">
+                <h2>Endu ingen opslag</h2>
+              </div>
+              <div class="foreslået-til-dig">
+                <div class="foreslået-top">
+                  <h2>foreslået stil dig</h2>
+                  <a href="#">se alle</a>
+                </div>
+                <div class="forslået-boxes">
+                  <div class="profil-box">
+                    <img src="/assets/profil.png" alt="" />
+                    <h2>bruger navn</h2>
+                    <p>bruger navn</p>
+                    <button class="Følg-button">Følg</button>
+                  </div>
+                  <div class="profil-box">
+                    <img src="/assets/profil.png" alt="" />
+                    <h2>bruger navn</h2>
+                    <p>bruger navn</p>
+                    <button class="Følg-button">Følg</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tagget-stuff hide">
+              <div class="tagget">
+                <button class="tagget-button">
+                  <img src="/assets/tagget.png" alt="" />
+                </button>
+              </div>
+              <div class="under-tagget">
+                <h2>Ingen Billeder</h2>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer class="other-footer">
+          <div class="footer-links1">
+            <a href="">Meta</a>
+            <a href="">Om</a>
+            <a href="">Blog</a>
+            <a href="">Jobs</a>
+            <a href="">Hjælp</a>
+            <a href="">API</a>
+            <a href="">Beskyttelse af personoplysninger</a>
+            <a href="">Vilkår</a>
+            <a href="">Relevante konti</a>
+            <a href="">Lokationer</a>
+            <a href="">Instagram Lite</a>
+            <a href="">Overførelse af kontakter og ikke-brugere</a>
+            <a href="">Meta Verified</a>
+          </div>
+          <div class="footer-links1">
+            <a href="">Dansk</a>
+            <a href="">© 2023 Instagram from Meta</a>
+          </div>
+        </footer>
+      </section>
+    </div>
+  </body>
+</html>
